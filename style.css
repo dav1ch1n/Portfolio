@@ -1,25 +1,108 @@
-body{
-    background: linear-gradient(to right, rgb(172, 235, 233), rgb(255,255,255));
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+    --color-link: black;
 }
-#foto-perfil{
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 200px; 
-    border-radius: 50%; 
+
+body {
+    background: linear-gradient(to right, rgb(172, 235, 233), rgb(255, 255, 255));
 }
-.indice{
+
+
+
+/* Header */
+header {
     display: flex;
-    style: none; 
-    padding: 0; 
-    margin: 0;
-    justify-content: left; 
-    font-size: 35px; 
 }
-.titulo{
-    text-align: center; 
-    font-family: 'Arial Black', Gadget, sans-serif; 
-    font-size: 80px; 
-    color: rgb(0, 0, 0); 
-    margin-top: 0%;
+
+.icono {
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-indice {
+    display: flex;
+    font-family: var(--font-family);
+    padding: 0;
+    justify-content: space-evenly;
+    align-content: left;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+/* Main*/
+#foto-perfil {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido {
+    text-align: justify;
+    font-family: var(--font-family);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+#sobre-mi {
+    text-align: left;
+    font-size: 35px;
+}
+
+a[href="https://github.com/dav1ch1n/ProyectoJuego.git"] {
+    color: var(--color-link);
+}
+
+a[href="https://github.com/dav1ch1n/Portfolio.git"] {
+    color: var(--color-link);
+}
+
+.proyectos {
+    text-align: justify;
+    font-family: var(--font-family);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: rgb(118, 215, 163);
+    }
+
+    .icono {
+        display: none;
+    }
+
+    .nav-indice {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        align-content: left;
+    }
 }
