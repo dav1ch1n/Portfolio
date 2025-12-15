@@ -14,3 +14,5 @@ Para ver este proyecto localmente, simplemente:
 Descargue o clone los archivos (index.html y style.css).
 Asegúrese de tener todas las imágenes de referencia en las rutas correctas (ej. ./fondo.jpg, ./Foto.png).
 Abra index.html en cualquier navegador web.
+
+Pagina web desplegada: https://portfoliodavidgutierrez.netlify.app/
