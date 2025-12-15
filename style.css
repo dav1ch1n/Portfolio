@@ -116,12 +116,32 @@ a[href="https://github.com/dav1ch1n/Portfolio.git"] {
 }
 
 .proyectos ul {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+    gap: 40px;
     list-style: none;
     padding: 0;
+    margin: 10%;
+    width: 80%;
+}
+
+.proyectos ul li {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 20px;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.texto-proyecto {
+    flex-grow: 0;
 }
 
 .formulario {
@@ -257,13 +277,20 @@ textarea {
         gap: 20px;
     }
 
-    .proyectos {
-        margin-left: 5%;
-        margin-right: 5%;
+    .proyectos ul li {
+        flex-direction: column;
+    }
+
+    .imagen-proyecto {
+        width: 35%;
+        height: auto;
+        flex-shrink: 0;
+
     }
 
     .proyectos {
         margin-left: 5%;
         margin-right: 5%;
     }
+
 }
