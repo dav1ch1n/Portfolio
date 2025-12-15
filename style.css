@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url("./fondo.jpg");
+    background-image: url("./imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -210,7 +210,7 @@ textarea {
 @media screen and (max-width: 600px) {
 
     body {
-        background-image: url("./fondo.jpg");
+        background-image: url("./imagenes/fondo.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
@@ -273,16 +273,26 @@ textarea {
     }
 
     .proyectos ul {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 4fr;
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+        margin: 10%;
+        width: 80%;
     }
 
     .proyectos ul li {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .imagen-proyecto {
-        width: 35%;
+        width: 100%;
         height: auto;
         flex-shrink: 0;
 
