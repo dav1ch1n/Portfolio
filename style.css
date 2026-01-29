@@ -4,18 +4,17 @@ html {
 
 :root {
     --font-family: Arial, Helvetica, sans-serif;
-    --color-link: white;
+    --color-link: black;
+    --fondo: rgb(160, 159, 193);
 }
 
 body {
     background-image: url("./imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
     /*background: linear-gradient(to right, rgb(172, 235, 233), rgb(255, 255, 255));*/
 }
-
-
 
 /* Header */
 header {
@@ -64,11 +63,15 @@ header {
 }
 
 /* Main*/
+
 #foto-perfil {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+    border-radius: 100px;
+    border-color: white;
+    border-style: solid;
 }
 
 #titulo {
@@ -84,85 +87,161 @@ header {
 .contenido {
     text-align: justify;
     font-family: var(--font-family);
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 20px;
+    background-color: var(--fondo);
+    border-radius: 40px;
 }
 
 #sobre-mi {
-    text-align: left;
+    text-align: center;
     font-size: 35px;
 }
 
-a[href="https://github.com/dav1ch1n/ProyectoJuego.git"] {
-    color: var(--color-link);
-}
-
-a[href="https://github.com/dav1ch1n/Portfolio.git"] {
-    color: var(--color-link);
+#texto-presentacion {
+    margin: 10px;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    padding-bottom: 2dvh;
 }
 
 .proyectos {
     text-align: justify;
     font-family: var(--font-family);
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
     font-size: 20px;
-
+    border-radius: 40px;
+    background-color: var(--fondo);
 }
 
-.proyectos ul {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 4fr;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 10%;
-    width: 80%;
+#proyecto {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
 }
 
-.proyectos ul li {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+#texto-proyecto {
+    margin: 10px;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    padding-bottom: 2dvh;
+}
+
+.proyectos-general {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    align-items: flex-start;
-    width: 100%;
+    justify-content: center;
+}
+
+.proyecto1,
+.proyecto2,
+.proyecto3,
+.proyecto4 {
+    border-radius: 40px;
+    margin: 1%;
+    padding-bottom: 2dvh;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    background-color: white;
+    flex: 0 0 calc(48% - 10px);
+    box-sizing: border-box;
 }
 
 .imagen-proyecto {
-    width: 100%;
+    width: 50%;
     height: auto;
     flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
 
 .texto-proyecto {
     flex-grow: 0;
 }
 
-.formulario {
+.texto {
+    display: none;
+    margin: 10px;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    padding-bottom: 2dvh;
+}
+
+#referencias {
+    border-radius: 40px;
+    padding: 15px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+#parte-de-abajo {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+
+}
+
+#button:hover {
+    background-color: black;
+}
+
+.repositorio {
+    width: 70px;
+    height: 70px;
+}
+
+.contacto {
+    text-align: justify;
+    font-family: var(--font-family);
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 20px;
+    border-radius: 40px;
+    background-color: var(--fondo);
 }
 
 #contacto {
-    text-align: justify;
     justify-content: center;
-    font-family: var(--font-family);
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.texto-contacto {
+    margin: 10px;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    padding-bottom: 2dvh;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 input {
